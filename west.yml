@@ -1,0 +1,38 @@
+manifest:
+  remotes:
+    - name: JsmnRepo
+      url-base: https://github.com/zserge
+    - name: LairdCP
+      url-base: https://github.com/LairdCP
+
+  # Please add items below based on alphabetical order.
+  # These dependencies may need updating if new features are added to the firmware.
+  projects:
+    - name: jsmn
+      path: modules/jsmn
+      revision: 7b6858a5855299d173c5ab2b46e611bf9961cbef
+      remote: JsmnRepo
+    - name: Pinnacle_100_oob_demo
+      path: oob_demo
+      revision: v1.0.0
+      remote: LairdCP
+    - name: zephyr
+      west-commands: scripts/west-commands.yml
+      revision: hl7800-v1.0.0
+      remote: LairdCP
+      import: true
+    - name: zephyr_framework
+      path: modules/framework
+      revision: 44cc903d135af2e49159d4cc9ec0822cf573e310
+      remote: LairdCP
+    - name: zephyr-hal-lairdconnectivity
+      path: zephyr/ext/hal/lairdconnectivity
+      revision: f2e46c9ad8da72868d48b1eb2daf623c97817b42
+      remote: LairdCP
+    - name: zephyr_boards
+      path: zephyr/boards/arm
+      revision: 526cba883330f52da6f8822aa19db699b1b8b8f8
+      remote: LairdCP
+
+  self:
+    path: manifest_repo
