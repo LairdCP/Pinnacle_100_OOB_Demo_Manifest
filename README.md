@@ -22,13 +22,13 @@ Once `west` is installed, clone this repository using `west init` and `west upda
 
 ```
 # Checkout the latest manifest on master
-west init -m https://github.com/LairdCP/Pinnacle_100_oob_demo.git
+west init -m https://github.com/LairdCP/Pinnacle_100_OOB_Demo_Manifest.git
 
 # OR checkout v1.0.0 tag
-west init -m https://github.com/LairdCP/Pinnacle_100_oob_demo.git -mr v1.0.0
+west init -m https://github.com/LairdCP/Pinnacle_100_OOB_Demo_Manifest.git -mr v1.0.0
 
 # OR checkout GA1 branch
-west init -m https://github.com/LairdCP/Pinnacle_100_oob_demo.git -mr GA1
+west init -m https://github.com/LairdCP/Pinnacle_100_OOB_Demo_Manifest.git -mr GA1
 
 # Now, pull all the source described in the manifest
 west update
