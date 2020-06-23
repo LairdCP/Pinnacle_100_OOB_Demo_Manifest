@@ -14,16 +14,16 @@ manifest:
       remote: JsmnRepo
     - name: Pinnacle_100_oob_demo
       path: oob_demo
-      revision: v1.0.0
+      revision: v2.0.0
       remote: LairdCP
     - name: zephyr
       west-commands: scripts/west-commands.yml
-      revision: hl7800-v1.0.0
+      revision: hl7800-v2.0.0
       remote: LairdCP
       import: true
     - name: zephyr_framework
       path: modules/framework
-      revision: 44cc903d135af2e49159d4cc9ec0822cf573e310
+      revision: fd546c5341075a172f243aaefad23c465fdf2c79
       remote: LairdCP
     - name: zephyr-hal-lairdconnectivity
       path: zephyr/ext/hal/lairdconnectivity
@@ -31,7 +31,11 @@ manifest:
       remote: LairdCP
     - name: zephyr_boards
       path: zephyr/boards/arm
-      revision: 526cba883330f52da6f8822aa19db699b1b8b8f8
+      revision: 958483b12e5868b04409d765af582613a499f20d
+      remote: LairdCP
+    - name: zephyr_lib
+      path: modules/zephyr_lib
+      revision: a70f04f602b5a245e14eb9c83d73739036b2ddd3
       remote: LairdCP
 
   self:
