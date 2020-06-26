@@ -14,7 +14,7 @@ manifest:
       remote: JsmnRepo
     - name: Pinnacle_100_oob_demo
       path: oob_demo
-      revision: v2.0.0
+      revision: v2.1.0
       remote: LairdCP
     - name: zephyr
       west-commands: scripts/west-commands.yml
