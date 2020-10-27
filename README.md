@@ -26,11 +26,11 @@ Once `west` is installed, clone this repository using `west init` and `west upda
 # Checkout the latest manifest on master
 west init -m https://github.com/LairdCP/Pinnacle_100_OOB_Demo_Manifest.git
 
-# OR checkout v1.0.0 tag
-west init -m https://github.com/LairdCP/Pinnacle_100_OOB_Demo_Manifest.git --mr v1.0.0
+# OR checkout v3.0.0 tag
+west init -m https://github.com/LairdCP/Pinnacle_100_OOB_Demo_Manifest.git --mr v3.0.0
 
-# OR checkout GA1 branch
-west init -m https://github.com/LairdCP/Pinnacle_100_OOB_Demo_Manifest.git --mr GA1
+# OR checkout GA3 branch
+west init -m https://github.com/LairdCP/Pinnacle_100_OOB_Demo_Manifest.git --mr GA3
 
 # Now, pull all the source described in the manifest
 west update
@@ -40,19 +40,13 @@ west update
 
 If this is your first time working with a Zephyr project on your computer you should follow the [Zephyr getting started guide](https://docs.zephyrproject.org/latest/getting_started/index.html#) to install all the tools.
 
-The OOB demo uses zephyr 1.14.x, so GCC 8 is recommended.  Anything newer may cause issues when compiling.
-[GNU Arm Embedded Toolchain: 8-2019-q3-update](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) is recommended.
+The OOB demo uses zephyr 2.3.x, so GCC 9 is recommended.
+[GNU Arm Embedded Toolchain: 9-2019-q4-major](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads) is recommended.
 
-See here to [setup the GNU ARM Embedded tools](https://docs.zephyrproject.org/1.14.1/getting_started/toolchain_3rd_party_x_compilers.html)
+See here to [setup the GNU ARM Embedded tools](https://docs.zephyrproject.org/2.3.0/getting_started/toolchain_3rd_party_x_compilers.html#gnu-arm-embedded)
+
+If using Linux, v0.11.3 of the Zephyr SDK is recommended.
 
 ## Building the Firmware
 
-From the directory where you issued the `west init` and `west update` commands you can use the following command to build the firmware:
-
-```
-# Windows
-west build -b pinnacle_100_dvk -d oob_demo\build oob_demo\oob_demo
-
-# Linux and macOS
-west build -b pinnacle_100_dvk -d oob_demo/build oob_demo/oob_demo
-```
+See [here for build commands](https://github.com/LairdCP/Pinnacle_100_oob_demo/blob/master/docs/readme_ltem_aws.md#building-the-firmware).

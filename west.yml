@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zserge
     - name: LairdCP
       url-base: https://github.com/LairdCP
+    - name: ncs
+      url-base: https://github.com/nrfconnect      
 
   # Please add items below based on alphabetical order.
   # These dependencies may need updating if new features are added to the firmware.
@@ -14,29 +16,30 @@ manifest:
       remote: JsmnRepo
     - name: Pinnacle_100_oob_demo
       path: oob_demo
-      revision: v2.1.0
+      revision: v3.0.0
       remote: LairdCP
+    - name: sdk-nrf
+      path: nrf
+      revision: 4c0d3be2ed4ade4dc3e614e95e6f8e4330d663b4
+      remote: ncs
+      import: true      
     - name: zephyr
       west-commands: scripts/west-commands.yml
-      revision: hl7800-v2.0.0
+      revision: e144cc2562d9b09d23608fa67fc17af36fccd0ab
       remote: LairdCP
       import: true
-    - name: zephyr_framework
-      path: modules/framework
-      revision: fd546c5341075a172f243aaefad23c465fdf2c79
-      remote: LairdCP
-    - name: zephyr-hal-lairdconnectivity
-      path: zephyr/ext/hal/lairdconnectivity
-      revision: f2e46c9ad8da72868d48b1eb2daf623c97817b42
-      remote: LairdCP
     - name: zephyr_boards
       path: zephyr/boards/arm
-      revision: 958483b12e5868b04409d765af582613a499f20d
+      revision: d921397ac677e933c479bd59ff22cbba5abb1e4c
+      remote: LairdCP
+    - name: zephyr_framework
+      path: modules/framework
+      revision: 998509f5097ae8cbc2c9b1e0df5453b356814a38
       remote: LairdCP
     - name: zephyr_lib
       path: modules/zephyr_lib
-      revision: a70f04f602b5a245e14eb9c83d73739036b2ddd3
+      revision: dd6e9c0403f0f695f45a8afe3588ae6c0bfbea01
       remote: LairdCP
 
   self:
-    path: manifest_repo
+    path: pinnacle_100_oob_public_manifest
