@@ -16,7 +16,7 @@ manifest:
       remote: JsmnRepo
     - name: Pinnacle_100_oob_demo
       path: oob_demo
-      revision: v3.0.0
+      revision: v3.0.1
       remote: LairdCP
     - name: sdk-nrf
       path: nrf
