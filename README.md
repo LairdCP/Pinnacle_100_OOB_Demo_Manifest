@@ -1,5 +1,7 @@
 # Pinnacle 100 Out of Box Demo (OOB Demo) Manifest Repo
 
+> **Note:** Not recommended for new designs. Use https://github.com/LairdCP/Pinnacle-100-Firmware.git.
+
 ## Using the OOB Demo
 
 See the user guide for the OOB Demo [here](https://github.com/LairdCP/Pinnacle_100_oob_demo/blob/master/README.md)
